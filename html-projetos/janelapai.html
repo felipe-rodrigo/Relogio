@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulário Simples</title>
+
+<script>
+// Pega os elementos do formulário
+var input1 = document.getElementById("input1");
+var input2 = document.getElementById("input2");
+var button = document.querySelector("button");
+
+// Adiciona um ouvinte de evento ao botão para que ele execute uma função quando clicado
+button.addEventListener("click", function(event) {
+  event.preventDefault();
+  
+  // Lê os valores dos inputs
+  var input1Value = input1.value;
+  var input2Value = input2.value;
+  
+  // Exibe uma mensagem com os valores lidos
+  alert("Valor do Input 1: " + input1Value + "\nValor do Input 2: " + input2Value);
+});
+</script>
+
+</head>
+<body>
+  <form>
+    <label for="input1">Input 1:</label>
+    <input type="text" id="input1" name="input1">
+    <br><br>
+    <label for="input2">Input 2:</label>
+    <input type="text" id="input2" name="input2">
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

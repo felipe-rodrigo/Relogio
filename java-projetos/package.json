@@ -1,0 +1,47 @@
+{
+  "_from": "center",
+  "_id": "center@0.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-4ffvwP3JWTEHZIHRD8eJfv7+AFXVmq35xlRTU+P+IhOeDZ3vgk/gJR5MiNGgNGP7sX8kMRs7MFRyah6AJdksXg==",
+  "_location": "/center",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "center",
+    "name": "center",
+    "escapedName": "center",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/center/-/center-0.0.0.tgz",
+  "_shasum": "65dd1650e2ea94e99a5ad92b63f40f43cfae84d0",
+  "_spec": "center",
+  "_where": "C:\\EstudoJava\\estudojava\\.vscode",
+  "author": {
+    "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
+    "url": "http://dominictarr.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dominictarr/center/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "center an element in window or inside another element.",
+  "devDependencies": {},
+  "homepage": "https://github.com/dominictarr/center",
+  "license": "MIT",
+  "name": "center",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/center.git"
+  },
+  "version": "0.0.0"
+}

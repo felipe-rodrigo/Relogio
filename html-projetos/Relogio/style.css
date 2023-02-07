@@ -1,0 +1,106 @@
+/* Configuração para todos os elementos quanto a padronização de margin e padding */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do background e posicionamento do elemento 'uhr' (relógio) */
+
+body {
+  background-image: linear-gradient(
+    45deg, 
+    #082dc0 0%,
+    #ff31f8 46%,
+    #f9c25c 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Definição do Elemento principal 'uhr' (O Container/relógio) */
+
+.uhr {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+}
+
+/* Configuração dos números e demais elementos filhos do elemento 'uhr' (O Container/relógio)*/
+
+.uhr .zahl {
+  --rotation: 0;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 15px;
+}
+
+/* Posicionamento dos números, flihos do elemento 'uhr' (O Container/relógio)*/
+
+.uhr .zahl.zahl-1 {
+  --rotation: 30deg;
+}
+.uhr .zahl.zahl-2 {
+  --rotation: 60deg;
+}
+.uhr .zahl.zahl-3 {
+  --rotation: 90deg;
+}
+.uhr .zahl.zahl-4 {
+  --rotation: 120deg;
+}
+.uhr .zahl.zahl-5 {
+  --rotation: 150deg;
+}
+.uhr .zahl.zahl-6 {
+  --rotation: 180deg;
+}
+.uhr .zahl.zahl-7 {
+  --rotation: 210deg;
+}
+.uhr .zahl.zahl-8 {
+  --rotation: 240deg;
+}
+.uhr .zahl.zahl-9 {
+  --rotation: 270deg;
+}
+.uhr .zahl.zahl-10 {
+  --rotation: 300deg;
+}
+.uhr .zahl.zahl-11 {
+  --rotation: 330deg;
+}
+.uhr .zahl.zahl-12 {
+  --rotation: 0deg;
+}
+
+/* Ponteiros do relógio */
+
+.uhr .hand {
+  --rotation: 0;
+
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 10px;
+  height: 40%;
+  background-color: black;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
