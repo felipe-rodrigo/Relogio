@@ -89,18 +89,47 @@ body {
 
 /* Ponteiros do relógio */
 
-.uhr .hand {
+.uhr .zeiger {
   --rotation: 0;
 
   position: absolute;
   bottom: 50%;
   left: 50%;
-  width: 10px;
-  height: 40%;
   background-color: black;
   z-index: 10;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
   transform-origin: bottom;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.uhr .zeiger.sekunden {
+  background-color: rgb(255, 0, 0);
+  height: 40%;
+  width: 3px;
+}
+.uhr .zeiger.minuten {
+  background-color: black;
+  height: 35%;
+  width: 7px;
+}
+.uhr .zeiger.stunde {
+  background-color: black;
+  height: 30%;
+  width: 10px;
+}
+
+/* Centro dos ponteiros */
+
+.uhr::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  background-color: black;
+  transform: translateX(-50%);
 }
