@@ -1,0 +1,111 @@
+ESTRUTURAS DE REPETIÇÃO II
+
+- Lê-se da seguinte maneira:
+
+  Repita
+    castigo
+  Ate 'arrumar o quarto'
+  liberado
+
+Conceitualmente, as frases (expressões) das estruturas de repetição são logicamente inversas.
+
+Exemplo:
+
+  ENQUANTO => "Enquanto 'não arrumar o quarto' vai ficar de castigo";
+
+    Enquanto (cont <= 10) faca
+      EscrevaL(cont)
+      cont = cont + 1;
+    FimEnquanto
+
+
+  REPITA => "REPITA castigo ate 'arrumar o quarto'";
+
+    Repita 
+      EscrevaL(cont)
+      cont = cont + 1;
+    Ate (cont >= 10)
+
+- Na estrutura ENQUANTO o teste lógico é feito no início;
+
+  Exemplo:
+
+    * Enquanto 'teste lógico inicial' faca
+        Bloco1
+      FimEnquanto
+
+- Na estrutura REPITA o teste lógico é feito no final;
+
+  Exemplo:
+
+    * Repita 
+        Bloco1
+      Ate 'teste logico final'
+
+
+*** Declaração de variáveis
+    
+    - Tenho um número que sempre será lido, logo, sempre começar declarando uma variável "n"
+
+////////////////////////////////////////////
+
+algoritmo "SomadorRepita"
+  var 
+    n, s : inteiro;
+    resp : caractere;
+  inicio 
+    s = 0;
+    Repita
+      Escreva("Digite um número: ");
+      Leia(N);
+      s = s + n;
+      EscrevaL("Deseja Continuar? [S/N]");
+      Leia(resp);
+    Ate Leia(resp = n); 
+      EscrevaL("A soma dos valores inseridos são: " + s);
+fimalgoritmo
+
+////////////////////////////////////////////
+
+algoritmo "Quer contar até quanto?"
+  var
+    n, s : inteiro
+    resp : caractere
+  inicio
+  s = 0;
+  Repita
+    Escreva("Digite um número: ");
+    Leia(n);
+    s = s + n;
+    EscrevaL("Deseja CONTINUAR? [S/N]");
+    Leia(resp);
+  Ate (resp = n);
+  EscrevaL("A soma dos valores inseridos são: " + s);
+fimalgoritmo
+
+//////////////////////////////////////////////
+
+algoritmo 
+  var
+    n, f : inteiro
+  inicio 
+    f = 0;
+  Repita 
+    Esvreva("Deseja ver a tabuada de qual numero? ");
+    Leia(n);
+    r = n * f;
+    EscrevaL(n + " x " + f + " = " + r);
+    f = f + 1;
+  Ate (f > 10);
+fimalgoritmo
+
+/////////////////////////////////////////////
+
+
+
+algoritmo 
+  var
+    n : int
+  inicio
+  Escreva()
+fimalgoritmo

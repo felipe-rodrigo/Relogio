@@ -1,0 +1,109 @@
+ESTRUTURAS DE REPETIÇÃO I (ENQUANTO)
+
+- Pode ser interpretada como:
+
+  Enquanto 'não arrumar o quarto' faca
+    castigo
+  FimEnquanto
+  liberado
+
+//////////////////////////////////////
+
+algoritmo "Contar até 5"
+  var
+    cont : inteiro
+  inicio
+    cont = 0;
+    Enquanto (cont <= 5) faca
+      EscrevaL(cont) 
+      cont = cont + 1;
+    FimEnquanto
+fimalgoritmo
+
+=> Nesse caso, o usuário é "obrigado" a contar até 5;
+
+//////////////////////////////////////
+
+algoritmo "Quer contar até quantos?"
+  var 
+    cont, x : inteiro
+  inicio
+  x = 0;
+  EscrevaL("Quer contar até quanto?");
+  Leia(cont);
+  Enquanto (x <= cont) faca
+    EscrevaL(x);
+    x = x + 1;
+  FimEnquanto
+fimalgoritmo
+
+=> O usuário decide até quantos quer contar, definindo isso através do valor atribuído a variável; 
+
+/////////////////////////////////////
+
+algoritmo "Valor da contagem e do intervalo"
+  var 
+    cont, x, dist : inteiro;
+  inicio
+  x = 0;
+  EscrevaL("Quer contar até quanto?");
+  Leia(cont);
+  EscrevaL("Qual o intervalo de contagem desejado?");
+  Leia(dist);
+  Enquanto (x <= cont) faca
+    EscrevaL(x);
+    x = x + dist;
+  FimEnquanto
+fimalgoritmo
+
+=> Aqui, além decidir até quanto contar, define-se também o intervalo da contagem;
+
+/////////////////////////////////////
+
+algoritmo "Soma de 10 números"
+  var
+    cont, x, sum : inteiro;
+  inicio
+  cont = 1;
+  soma = 0;
+  EscrevaL("Digite os números para somá-los;");
+  Enquanto (cont <= 10) faca
+    EscrevaL("Digite o" + cont + "° número: ");
+    Leia(x);
+    sum = sum + x;
+    cont = cont + 1;
+  FimEnquanto
+  EscrevaL("A soma dos números digitados são: " + sum)
+fimalgoritmo
+
+=> Dez números inteiros são solicitados pelo programa para que ele realize a soma dos dez valores;
+
+//////////////////////////////////////
+
+algoritmo "Soma de 10 números e apresentação de números de destaque"
+  var
+    cont, x, sum, maior, menor: inteiro;
+  inicio
+  cont = 1;
+  soma = 0;
+  EscrevaL("Digite os números para somá-los;");
+  Enquanto (cont <= 10) faca
+    EscrevaL("Digite o" + cont + "° número: ");
+    Leia(x);
+    Se (x > maior) entao
+      maior = x;
+    FimSe
+    Se (x < menor) entao
+      menor = x;
+    FimSe
+    sum = sum + x;
+    cont = cont + 1;
+  FimEnquanto
+  EscrevaL("A soma dos números digitados são: " + sum);
+  EscrevaL("O Maior Número Digitado Foi: " + maior);
+fimalgoritmo
+
+=> Assim como o resultado de dez valores, é apresentado também o números de destaque como o maior e o menor;
+
+/////////////////////////////////////////
+
